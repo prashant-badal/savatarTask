@@ -1,0 +1,97 @@
+/* NavBar.css */
+
+.navbar-container {
+    position: relative;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Drawer */
+  .drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+  
+  .drawer.open {
+    transform: translateX(0);
+  }
+  
+  .drawer-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .drawer-item {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .drawer-item:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-items {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .drawer-content {
+      padding-top: 50px;
+    }
+  }
+  
