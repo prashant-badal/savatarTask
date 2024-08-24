@@ -1,31 +1,20 @@
-/* AppContainer.module.css */
-.appContainer {
-  display: flex;
-  width: 100%;
-  height: 100vh; /* Adjust height as needed */
+
+
+.custom-arrows {
+  position: relative;
+   display: flex;
+  justify-content: end;
+  margin-top: 10px; /* Space between the carousel and buttons */
+  padding: 0 20px; /* Adjust padding as needed */
 }
 
-/* ButtonImg section */
-.buttonImg {
-  flex: 0 0 40%; /* Flex basis of 40% */
-  max-width: 40%; /* Ensure it doesn't exceed 40% */
-  position: relative; /* Required for absolute positioning within it */
+/* Style for individual buttons */
+.prev-button, .next-button {
+  cursor: pointer;
+  border: 2px solid black;
+  padding :4px;
+  margin-left: 20px;
 }
 
-/* CarouselPart section */
-.carouselPart {
-  flex: 0 0 60%; /* Flex basis of 60% */
-  max-width: 60%; /* Ensure it doesn't exceed 60% */
-}
 
 /* Show or adjust styles based on screen size */
-@media (max-width: 1024px) {
-  .appContainer {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-  }
-
-  .buttonImg, .carouselPart {
-    max-width: 100%; /* Full width on smaller screens */
-    flex: 0 0 100%; /* Full width on smaller screens */
-  }
-}

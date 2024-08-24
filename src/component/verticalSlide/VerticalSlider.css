@@ -1,0 +1,33 @@
+
+.slider-container {
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide horizontal scroll */
+    position: relative;
+  }
+  
+  .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide-item {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #5a3f3f; /* Background color for slides */
+    border: 1px solid #ddd; /* Optional border for slides */
+  }
+  
+  .slick-dots {
+    bottom: 10px; /* Position dots at the bottom */
+  }
+
+  @media (max-width: 600px) {
+    .slider-container {
+        display: none;
+    }}
+  
+

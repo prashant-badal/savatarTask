@@ -1,0 +1,15 @@
+.customArrows {
+    position: relative;
+     display: flex;
+    justify-content: end;
+    margin-top: 10px; /* Space between the carousel and buttons */
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+  
+  /* Style for individual buttons */
+  .prevButton, .nextButton {
+    cursor: pointer;
+    border: 2px solid black;
+    padding :4px;
+    margin-left: 20px;
+  }

@@ -52,6 +52,7 @@ const NavBar=()=> {
         {drawer}
       </Drawer>
     </div>
+  
   );
 }
 

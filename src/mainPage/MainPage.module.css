@@ -1,0 +1,79 @@
+
+
+.mainContainerLarge {
+    padding: 0 16px;
+    display: flex;
+    gap: 12px;
+    height: 500px;
+    position: relative;
+}
+
+.boxCover {
+    height: 100%;
+    width: 40%; /* Adjusted to take 40% of the container's width */
+    display: block;
+    object-fit: cover;
+}
+
+.carouselDestop {
+    display: flex;
+    width: 60%; /* Adjusted to take 60% of the container's width */
+
+    position: relative; 
+}
+
+.mainContainerSmall {
+    display: none;
+}
+
+
+.nextArrow {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prevArrow {
+    position: absolute;
+    bottom: 10px;
+    right: 60px; /* Position slightly left to the next button */
+    display: block;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+
+ 
+
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .mainContainerLarge {
+        display: none;
+    }
+    .mainContainerSmall {
+        display: block;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .boxCover, .carouselDestop {
+        width: 50%; /* Adjusted to 50% each */
+    }
+}
